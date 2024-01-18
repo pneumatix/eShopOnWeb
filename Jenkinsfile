@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Tests') {
+      steps {
+        sh 'dotnet test tests/UnitTests'
+      }
+    }
+
   }
 }
